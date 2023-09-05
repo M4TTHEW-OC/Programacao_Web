@@ -7,13 +7,11 @@ Você pode encadear métodos .then() para manipular o resultado bem-sucedido de 
 
 
     - Manipular o resultado bem-sucedid
-
   minhaPromise
   .then((resultado) => {            
   })
 
     - Lidar com erros
-    
   .catch((erro) => {                
   });
   
