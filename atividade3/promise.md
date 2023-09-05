@@ -6,12 +6,15 @@ As Promises são um recurso essencial na linguagem de programação JavaScript p
 Você pode encadear métodos .then() para manipular o resultado bem-sucedido de uma Promise e o método .catch() para lidar com erros.
 
 
+    - Manipular o resultado bem-sucedid
 
   minhaPromise
-  .then((resultado) => {            - Manipular o resultado bem-sucedido
+  .then((resultado) => {            
   })
-  
-  .catch((erro) => {                - Lidar com erros
+
+    - Lidar com erros
+    
+  .catch((erro) => {                
   });
   
  2. Promise.all e Promise.race
@@ -21,19 +24,21 @@ Promise.all permite que você execute várias Promises em paralelo e espera até
 const promessas = [promise1, promise2, promise3];
 
 Promise.all(promessas)
+
+    - Todos os resultados estão prontos
   .then((resultados) => {          
   })
-  
-  - Todos os resultados estão prontos
+
+    - Lidar com um erro em qualquer uma das Promises
     
   .catch((erro) => {              
   });
 
-  - Lidar com um erro em qualquer uma das Promises
 
+     - A primeira Promise resolvida
+   
 Promise.race(promessas)
   .then((primeiraResolvida) => {       
   });
 
-    - A primeira Promise resolvida
 As Promises são essenciais para lidar com operações assíncronas de maneira eficaz e legível em JavaScript. Elas facilitam o tratamento de casos complexos de fluxo de dados e melhoram a organização do código.
