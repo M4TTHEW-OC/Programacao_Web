@@ -10,6 +10,7 @@ Você pode encadear métodos .then() para manipular o resultado bem-sucedido de 
   minhaPromise
   .then((resultado) => {    - Manipular o resultado bem-sucedido
   })
+  
   .catch((erro) => {        - Lidar com erros
   });
   
@@ -22,6 +23,7 @@ const promessas = [promise1, promise2, promise3];
 Promise.all(promessas)
   .then((resultados) => {      - Todos os resultados estão prontos
   })
+  
   .catch((erro) => {           - Lidar com um erro em qualquer uma das Promises
   });
 
