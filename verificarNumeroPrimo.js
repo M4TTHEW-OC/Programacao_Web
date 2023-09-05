@@ -11,4 +11,4 @@ function numeroPrimo(num) {
     return 1
 }
 
-console.log(mumeroPrimo(2))
+console.log(numeroPrimo(2))
