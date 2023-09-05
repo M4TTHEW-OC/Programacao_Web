@@ -21,14 +21,19 @@ Promise.all permite que você execute várias Promises em paralelo e espera até
 const promessas = [promise1, promise2, promise3];
 
 Promise.all(promessas)
-  .then((resultados) => {          - Todos os resultados estão prontos
+  .then((resultados) => {          
   })
   
-  .catch((erro) => {               - Lidar com um erro em qualquer uma das Promises
+  - Todos os resultados estão prontos
+    
+  .catch((erro) => {              
   });
+
+  - Lidar com um erro em qualquer uma das Promises
 
 Promise.race(promessas)
-  .then((primeiraResolvida) => {        - A primeira Promise resolvida
+  .then((primeiraResolvida) => {       
   });
 
+    - A primeira Promise resolvida
 As Promises são essenciais para lidar com operações assíncronas de maneira eficaz e legível em JavaScript. Elas facilitam o tratamento de casos complexos de fluxo de dados e melhoram a organização do código.
