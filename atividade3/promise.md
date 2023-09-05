@@ -8,10 +8,10 @@ Você pode encadear métodos .then() para manipular o resultado bem-sucedido de 
 
 
   minhaPromise
-  .then((resultado) => {    - Manipular o resultado bem-sucedido
+  .then((resultado) => {            - Manipular o resultado bem-sucedido
   })
   
-  .catch((erro) => {        - Lidar com erros
+  .catch((erro) => {                - Lidar com erros
   });
   
  2. Promise.all e Promise.race
@@ -21,14 +21,14 @@ Promise.all permite que você execute várias Promises em paralelo e espera até
 const promessas = [promise1, promise2, promise3];
 
 Promise.all(promessas)
-  .then((resultados) => {      - Todos os resultados estão prontos
+  .then((resultados) => {          - Todos os resultados estão prontos
   })
   
-  .catch((erro) => {           - Lidar com um erro em qualquer uma das Promises
+  .catch((erro) => {               - Lidar com um erro em qualquer uma das Promises
   });
 
 Promise.race(promessas)
-  .then((primeiraResolvida) => {    - A primeira Promise resolvida
+  .then((primeiraResolvida) => {        - A primeira Promise resolvida
   });
 
 As Promises são essenciais para lidar com operações assíncronas de maneira eficaz e legível em JavaScript. Elas facilitam o tratamento de casos complexos de fluxo de dados e melhoram a organização do código.
