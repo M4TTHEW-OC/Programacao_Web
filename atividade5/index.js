@@ -40,7 +40,9 @@ app.get('/dados', function(req, req){
 app.post('/dados', function(req, res){
     let usuario = {
         nome: req.body.nome,
-        telefone: req.body.telefone
+        telefone: req.body.telefone,
+        endereco: req.body.endereco,
+        agendamento: req.body.agendamento
     };
     res.render('dados.html', {usuario} )
 });
